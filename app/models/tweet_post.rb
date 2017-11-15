@@ -9,6 +9,6 @@ class TweetPost < ActiveRecord::Base
       config.access_token_secret = ENV["ACCESS_SECRET"]
     end
 
-    client.update "User viewed page at " time.asc_time 
+    client.update "User viewed page at " + time.asc_time 
   end
 end
